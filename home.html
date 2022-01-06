@@ -5,7 +5,7 @@
 	<title>Главная</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20211224182720">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220106092429">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,8 +39,8 @@
 			</div>
 		</header>
 		<main class="page">
-			<section data-fullscreen class="page__fullscreen-header header-fullscreen">
-				<picture><source srcset="img/main-fullscreen/main-fullscreen-bg.webp" type="image/webp"><img class="header-fullscreen-bg" src="img/main-fullscreen/main-fullscreen-bg.jpg?_v=1640363240289" alt="background-image"></picture>
+			<section id="fullscreen" data-fullscreen class="page__fullscreen-header header-fullscreen">
+				<picture><source srcset="img/main-fullscreen/main-fullscreen-bg.webp" type="image/webp"><img class="header-fullscreen-bg" src="img/main-fullscreen/main-fullscreen-bg.jpg?_v=1641453869506" alt="background-image"></picture>
 				<div class="header-fullscreen__container">
 					<div class="header-fullscreen__content content-fullscreen">
 						<div class="content-fullscreen__body">
@@ -70,7 +70,8 @@
 								</div>
 								<form name='phoneform' class="content-fullscreen__phone phone-form" action="#">
 									<input class="phone-form__input" type="tel" id="phone" name="phoneinput" placeholder="Введите номер телефона">
-									<button class="phone-form__button common-button" name="phonebutton" type="submit">Получить скидку<img src="img/main-fullscreen/loading-icon.svg?_v=1640363240289" alt=""></button>
+									<button class="phone-form__button common-button" name="phonebutton" type="submit">Получить
+										скидку<img src="img/main-fullscreen/loading-icon.svg?_v=1641453869506" alt=""></button>
 								</form>
 							</div>
 							<div class="content-fullscreen__additional"></div>
@@ -80,18 +81,342 @@
 					<div class="header-fullscreen__side-block block-side">
 						<div class="block-side__top"></div>
 						<div data-da=".content-fullscreen__additional,991.98,last" class="block-side__links links-social">
-							<a href="#" class="links-social__icon"><img src="img/main-fullscreen/viber-icon.svg?_v=1640363240289" alt="viber-icon"></a>
-							<a href="#" class="links-social__icon"><img src="img/main-fullscreen/telegram-icon.svg?_v=1640363240289" alt="telegram-icon"></a>
-							<a href="#" class="links-social__icon"><img src="img/main-fullscreen/whatsapp-icon.svg?_v=1640363240289" alt="whatsup-icon"></a>
+							<a href="#" class="links-social__icon"><img src="img/main-fullscreen/viber-icon.svg?_v=1641453869506" alt="viber-icon"></a>
+							<a href="#" class="links-social__icon"><img src="img/main-fullscreen/telegram-icon.svg?_v=1641453869506" alt="telegram-icon"></a>
+							<a href="#" class="links-social__icon"><img src="img/main-fullscreen/whatsapp-icon.svg?_v=1641453869506" alt="whatsup-icon"></a>
 						</div>
 						<div class="block-side__bottom"></div>
 					</div>
 				</div>
 			</section>
+			<section class="page__test-price test-price">
+				<div class="test-price__container">
+					<div class="test-price__body">
+						<a href="#" class="test-price__picture">
+							<span class="picture-decor-top"></span>
+							<span class="picture-decor-right"></span>
+							<span class="picture-decor-bottom"></span>
+							<span class="picture-decor-left"></span>
+							<div class="test-price__image-ibg">
+								<picture><source srcset="img/test-price/test-price-image.webp" type="image/webp"><img src="img/test-price/test-price-image.jpg?_v=1641453869506" alt="test-price-picture"></picture>
+							</div>
+						</a>
+						<div class="test-price__content">
+							<h2 class="test-price__title">Узнайте стоимость мебели</h2>
+							<h3 class="test-price__subtitle">Ответь на вопросы,получи скидку и бесплатный
+								дизайн проект</h3>
+							<button class="test-price__button common-button">Пройти тест</button>
+						</div>
+						<button data-goto="fullscreen" data-goto-header data-goto-speed="1000" class="test-price__scroll-button"><picture><source srcset="img/test-price/scroll-to-top.webp" type="image/webp"><img src="img/test-price/scroll-to-top.png?_v=1641453869506" alt="tscroll-button"></picture></button>
+					</div>
+				</div>
+			</section>
+			<section class="page__about-us about-us">
+				<div class="about-us__container">
+					<div class="about-us__body">
+						<h2 class="about-us__title">О нас</h2>
+						<div class="about-us__block">
+							<div class="about-us__text">
+								<p>Мы рады видеть вас на нашем сайте, здесь представлены примеры наших работ и мебель, которую
+									мы можем изготовить, в том числе по вашим индивидуальным запросам.</p>
+								<p hidden class="hidden">Мы поможем сделать вашу квартиру, дом или офис более комфортным,
+									функциональным и привлекательным. В производстве мебели мы используем лучшие материалы и
+									современное оборудование, чтобы создавать по-настоящему красивую, удобную и качественную
+									мебель.</p>
+							</div>
+							<button type="button" class="about-us__showmore"><span class="more">Смотреть ещё</span><span class="less">Скрыть</span></button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__advantages advantages">
+				<div class="advantages__container">
+					<div class="advantages__body body-advantages">
+						<h2 class="body-advantages__title">Почему более 14 лет клиенты выбирают нас:</h2>
+						<div data-tabs class="body-advantages__tabs tabs">
+							<nav data-tabs-titles class="tabs__navigation">
+								<button type="submit" class="tabs__title _tab-active">
+									<div class="tabs__icon-ibg"><img src="img/advantages/advantages-icon-01.svg?_v=1641453869506" alt="advantage-picture"></div>
+									<div class="tabs__subtitle">Рассрочки</div>
+								</button>
+								<button type="submit" class="tabs__title">
+									<div class="tabs__icon-ibg"><img src="img/advantages/advantages-icon-02.svg?_v=1641453869506" alt="advantage-picture"></div>
+									<div class="tabs__subtitle">Заводские цены</div>
+								</button>
+								<button type="submit" class="tabs__title">
+									<div class="tabs__icon-ibg"><img src="img/advantages/advantages-icon-03.svg?_v=1641453869506" alt="advantage-picture"></div>
+									<div class="tabs__subtitle">Оперативные сроки</div>
+								</button>
+								<button type="submit" class="tabs__title">
+									<div class="tabs__icon-ibg"><img src="img/advantages/advantages-icon-04.svg?_v=1641453869506" alt="advantage-picture"></div>
+									<div class="tabs__subtitle">Акции, скидки, бонусы</div>
+								</button>
+								<button type="submit" class="tabs__title">
+									<div class="tabs__icon-ibg"><img src="img/advantages/advantages-icon-05.svg?_v=1641453869506" alt="advantage-picture"></div>
+									<div class="tabs__subtitle">Европейское качество</div>
+								</button>
+								<button type="submit" class="tabs__title">
+									<div class="tabs__icon-ibg"><img src="img/advantages/advantages-icon-06.svg?_v=1641453869506" alt="advantage-picture"></div>
+									<div class="tabs__subtitle">Бесплатная 3d визуализация</div>
+								</button>
+							</nav>
+							<div data-tabs-body class="tabs__content">
+								<div data-da=".tabs__navigation,1176,2" class="tabs__body">
+									Возможность рассрочки от нашей компании с 0% переплат!
+								</div>
+								<div data-da=".tabs__navigation,1176,2" class="tabs__body">
+									Заводские цены от нашей компании порадуют вас!
+								</div>
+								<div data-da=".tabs__navigation,1176,4" class="tabs__body">
+									Оперативные сроки выполнения вашего заказа!
+								</div>
+								<div data-da=".tabs__navigation,1176,4" class="tabs__body">
+									Новым и постоянным клиентам приятные акции, скидки, бонусы!
+								</div>
+								<div class="tabs__body">
+									Только Европейское качество и гарантия всех выполненных работ!
+								</div>
+								<div class="tabs__body">
+									Создадим 3d макет шкафа вашей мечты бесплатно!
+								</div>
+							</div>
+						</div>
+					</div>
 
-			<div class="page__text">
-				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta ex optio magni recusandae necessitatibus. Sit corporis ipsam, fugiat possimus modi officiis hic sed aspernatur fuga dolore pariatur alias assumenda libero natus. Est maiores facilis deleniti. Excepturi fugit velit quas facilis esse tenetur ullam vero qui in. Ex perspiciatis veniam quo necessitatibus, cum corrupti quidem inventore voluptatibus dolore velit dolor numquam, eligendi, nulla quia accusantium explicabo earum culpa natus beatae odio suscipit sunt. Impedit nam dolores odio asperiores, esse, voluptatum facilis natus, omnis officiis ipsam labore! Nostrum quam laborum harum quaerat. Animi voluptatem delectus accusantium magni voluptatibus quo iusto aspernatur odio autem! Amet natus maiores cum ipsum suscipit, sint numquam, ipsa nemo ad quod in atque architecto. Fugiat corrupti quisquam quo libero aperiam quidem alias natus distinctio consequatur, repellendus magnam quasi placeat illum aliquid tenetur molestiae laudantium a nulla ducimus excepturi nostrum inventore. Maiores quo reiciendis maxime doloremque in ut nemo eos ipsa quisquam sint a odio alias accusantium modi veritatis cupiditate dignissimos voluptatum, facere consequatur corrupti deserunt voluptatibus est. Voluptate, perspiciatis recusandae deserunt minima tempore amet! Ullam, natus cumque error dignissimos delectus ut a rem vitae. Animi vero qui itaque vel vitae provident aliquam blanditiis unde voluptates placeat praesentium beatae libero eaque facilis, repellat rerum dolorem possimus quidem laborum, eius laudantium voluptas. Ad nesciunt esse vitae natus facere, quam molestiae ab. Rem beatae temporibus eaque dolorum neque debitis fugiat dolores voluptatibus? Quod, cum quaerat dolore recusandae, possimus sit ut ea dignissimos expedita doloremque ducimus non. Recusandae, voluptatibus placeat! Placeat sint dolor fugiat quam, velit laborum sit consectetur enim eum quibusdam at, rem voluptatum reprehenderit omnis quaerat aliquid soluta sapiente vero ducimus ipsam sequi? Excepturi, aliquid. Fugit aperiam assumenda officiis, totam maxime ex! Voluptatum delectus vero laudantium aliquid veritatis quae ullam eos natus nemo, labore nesciunt ea eum quisquam at fuga reiciendis dolore eius blanditiis fugiat a nisi vitae. Cupiditate odit placeat sunt consequuntur temporibus quae voluptatibus nihil, facere reprehenderit earum? Ipsam id modi est sequi quaerat optio adipisci facere culpa dicta doloremque natus ratione ex distinctio, consequuntur velit accusantium nihil nostrum numquam odit necessitatibus voluptatibus cupiditate enim. At maxime atque dicta amet, nobis perspiciatis eos ad quibusdam repellendus minus quis vitae veritatis illo possimus architecto! Harum ducimus voluptate enim vel repudiandae doloribus incidunt beatae culpa, expedita quisquam rerum sit recusandae ipsa iusto delectus explicabo molestias, iure ullam ratione aperiam in provident aliquid. Veniam voluptatem quibusdam voluptatum praesentium debitis labore facere in? Soluta totam nisi quos illo. Aspernatur explicabo odit harum ratione modi, suscipit qui praesentium sapiente rerum voluptatem perspiciatis unde sint voluptates corporis laudantium consequatur voluptas quasi commodi, cumque laboriosam in accusamus, officia expedita! Libero ullam est assumenda quisquam cupiditate autem quae voluptas ipsam! Sit, culpa? Ducimus voluptates mollitia aut alias vel ea rerum, quisquam similique non consectetur enim recusandae deleniti aliquid corporis. Voluptatibus, repudiandae. Aut non et exercitationem dolore laborum atque earum tenetur, natus voluptate deleniti, optio cum doloremque! Qui laudantium nostrum hic nihil, unde reiciendis aperiam explicabo itaque nesciunt repellat quos eum cum, commodi alias culpa adipisci eveniet quis nobis temporibus odio! Illo dolor fugit, distinctio non odio enim quod quia debitis ipsum? Deserunt, consequuntur corrupti quisquam similique fugit, voluptates nobis modi, dolorem officia explicabo impedit. Laboriosam ullam autem minima deserunt sit itaque inventore beatae vel tenetur doloremque voluptatibus quaerat illo dolores voluptates nisi quisquam aspernatur tempora, atque accusantium neque labore blanditiis pariatur quos iusto. Porro obcaecati placeat molestias, nobis necessitatibus eum dolores nihil praesentium repellendus dignissimos aperiam molestiae ab voluptates assumenda nisi, labore architecto facere blanditiis enim. Porro dolores natus enim delectus exercitationem expedita quibusdam eveniet numquam velit libero labore, fugiat facere cum animi commodi officia rerum. Earum tenetur odit quos, vero reiciendis suscipit eveniet nesciunt eius ad omnis animi minus aliquid numquam unde asperiores maxime neque consequuntur molestiae accusamus debitis laborum officiis, doloremque nisi? Dolorem dolorum quis vel eius at quae deleniti in velit ex, doloribus dignissimos enim modi. Optio dolor alias eaque asperiores delectus facilis tempora, nisi officia vero nobis sapiente fugit ipsa? Nisi qui, expedita fuga omnis, voluptatibus corrupti necessitatibus facilis fugiat quod quaerat reiciendis porro natus in quae reprehenderit earum illum numquam praesentium. Quibusdam deleniti debitis corrupti ex maxime. Iusto consectetur doloremque ex error inventore quasi dolore odio, quas porro reprehenderit beatae itaque soluta in placeat assumenda impedit, exercitationem sed quaerat unde maiores. Tenetur nam explicabo dolores cumque repellat iusto officiis fugit nobis accusamus optio dolor, non rem a ex soluta sunt voluptatem vel eaque. Quia fugiat, esse perferendis molestiae harum iure amet, iusto quibusdam atque natus veritatis obcaecati distinctio laudantium ad at laboriosam. Exercitationem eligendi assumenda libero, delectus fuga sequi deserunt odio explicabo at error quam voluptate iusto iure non nobis. Tenetur ipsam illo temporibus eaque natus id quis adipisci dignissimos ducimus commodi sapiente magnam, quae unde hic pariatur tempore consectetur nostrum facere est. Possimus quasi provident, sed facere molestiae excepturi architecto tempore vero expedita quos placeat accusamus quaerat alias doloremque est! Maxime illum saepe ratione sed nam, accusantium vel doloremque sunt beatae numquam quo, velit eum autem harum aliquid, in sequi dolor obcaecati praesentium! Iure ea quas asperiores molestias aut? Est quisquam quos neque, molestias asperiores repellendus ad consequuntur, ullam labore obcaecati magnam doloribus eaque nulla blanditiis, similique velit ducimus placeat expedita autem harum officiis illum. Libero consectetur molestiae modi ut culpa, aspernatur illum quibusdam maiores nam laboriosam tempore quaerat, quam voluptates explicabo dignissimos! Quo eligendi porro mollitia labore eius, repellat eos ducimus voluptatum iure iusto inventore commodi nemo ratione voluptate totam soluta obcaecati illo architecto ipsam repellendus officia! Optio, eum illo veniam eveniet omnis aspernatur, expedita architecto obcaecati magni saepe delectus reiciendis doloremque voluptatem eius vero sit accusantium quibusdam magnam sunt illum dolores id! Iste, ratione placeat aspernatur quasi totam veniam exercitationem adipisci et repellat cupiditate beatae fuga officia assumenda. Repellendus laudantium autem cum a et doloremque cupiditate blanditiis voluptatibus illum doloribus? Officiis placeat iure repudiandae, corporis molestias asperiores est mollitia inventore perferendis modi, praesentium impedit quas voluptas vero laudantium. Ab quod nam distinctio sunt expedita tempora incidunt adipisci inventore perspiciatis voluptatum repudiandae, est nostrum nulla impedit atque ad, a mollitia natus. Eligendi distinctio debitis cupiditate. Recusandae id facilis ullam odit reiciendis velit quo nihil voluptates, quasi cupiditate doloremque fugit architecto sapiente vel nobis repudiandae, reprehenderit deserunt aspernatur modi facere! Illum sed laudantium doloribus odio quae ullam ipsum eum, molestiae blanditiis explicabo molestias soluta laboriosam itaque vitae modi maiores ex vero cum, illo eos voluptatibus, quo est? Labore iusto, ratione nobis architecto aut sit voluptatibus rem praesentium maxime ipsam aperiam voluptas nulla? Illo provident, omnis dicta nisi temporibus sunt similique quisquam, consectetur eveniet saepe excepturi labore? Repellat at unde quis et quas necessitatibus, quod aspernatur obcaecati praesentium magni enim, eaque ipsam maiores molestias ad officia aliquam molestiae recusandae laudantium deleniti impedit eum! Soluta deserunt amet placeat, minus ex consequuntur repellendus numquam quos harum odit vel autem debitis reiciendis repellat perspiciatis deleniti atque alias modi corporis eius labore ratione ea. Neque inventore esse, rem atque in consequatur facilis veniam sed obcaecati reprehenderit explicabo mollitia dolorem maiores nihil iusto. Voluptatibus, culpa qui id hic adipisci dolorum nesciunt? Adipisci eveniet cumque tempora. Architecto aperiam, ducimus sequi exercitationem repudiandae laboriosam recusandae in. Sit quod pariatur vitae voluptatem impedit! Ipsum, iure. Necessitatibus blanditiis odio adipisci corrupti id, modi exercitationem sint. Molestias sapiente doloremque perferendis corporis debitis nobis sequi velit, blanditiis odit minima cum quae nisi quos nulla atque voluptas consequatur possimus dolores iusto explicabo sit illum tenetur quam. Ipsam dolorem esse maxime eius reiciendis excepturi modi nesciunt hic minus sequi mollitia quibusdam architecto in, rem enim, sapiente saepe magni, ut neque incidunt officia. Aliquam veniam error asperiores est tenetur omnis, consequatur repudiandae recusandae et voluptate quidem quisquam ullam laborum exercitationem eveniet ea ducimus corporis dolorem accusantium! Repellendus a, libero reiciendis molestias aspernatur doloremque perferendis et quas odio quaerat assumenda quidem blanditiis eveniet fugit iste unde laborum illo maxime quasi perspiciatis. Magnam incidunt ipsam delectus temporibus iste at. Aspernatur doloribus temporibus recusandae earum ipsa id. Dolore molestias quidem consectetur amet atque explicabo maiores officiis repellendus repudiandae repellat! Facilis tempora accusantium, laudantium asperiores ipsum alias corrupti quos repellendus tempore dicta, eaque iusto rem doloribus? Delectus, omnis? Excepturi voluptatem eius quisquam vitae harum libero earum? Rerum doloremque in, fuga optio sapiente maxime inventore cupiditate voluptate quas earum quo vero? Sapiente vitae sed omnis expedita at nam repellat, ipsa laboriosam doloremque error fuga suscipit facilis ea temporibus fugiat ipsum odio mollitia? Mollitia molestiae distinctio ut suscipit eligendi! Nihil odio dolorem laudantium assumenda nesciunt similique. Mollitia est dolorem aliquam ab voluptatem, maxime distinctio? Ea delectus, quasi, rem molestias quaerat ipsam animi ad consectetur deleniti tempore veritatis itaque magnam veniam corrupti dolores vitae quod doloribus suscipit optio fuga sequi illo officia inventore omnis. Odio eligendi nihil animi quia? Nobis quos reiciendis provident, tempora magni incidunt illum nisi. Quibusdam numquam ipsa accusantium, cupiditate et eos? Quae adipisci aperiam accusantium quos dolorem corporis quas odit cum! Molestias, id. Dignissimos delectus possimus quae magni placeat sit quidem corporis similique. Dolorem blanditiis nulla consectetur ea illo aliquid autem eos eius vel, amet sunt eum neque sapiente perspiciatis fugit. Doloremque, delectus provident odit molestias sequi velit eveniet dolorem perspiciatis quos cum totam eligendi ad veniam quae fuga mollitia illo similique a rem unde! Quis exercitationem eum consectetur voluptatibus! Reprehenderit necessitatibus deleniti aliquam esse deserunt libero vero! Aperiam neque earum consequatur ducimus itaque animi error id, nemo perferendis eius. Natus, iusto temporibus. Obcaecati similique aperiam magnam vel beatae sequi soluta deserunt eligendi provident? Reprehenderit iste ipsa vero, accusantium sunt nisi quaerat quidem accusamus quisquam soluta cumque, adipisci nobis itaque doloribus omnis iusto ipsam eligendi? Provident odio commodi optio. Veniam labore molestiae tempore voluptate iure culpa ullam sunt odio consequatur mollitia facilis esse doloremque itaque vero distinctio iste, sit ipsam reprehenderit, voluptates deleniti iusto! Corrupti officiis ullam architecto asperiores distinctio iure quibusdam et rerum quae consectetur totam ratione, ducimus, perspiciatis esse pariatur laudantium beatae obcaecati at placeat nobis. Ipsa, quos iste? Repudiandae laudantium consectetur, quaerat vero voluptates nobis amet deleniti necessitatibus ullam odit pariatur distinctio, cumque similique quos quisquam? Dolorum tenetur in aliquid quidem voluptas accusantium vero? Cupiditate animi earum eius assumenda ab! Assumenda dolor ad optio, repudiandae modi cumque. Excepturi enim architecto fugiat similique facilis distinctio nulla iusto officia ullam odit eos incidunt atque est illo rem eius, laudantium maiores culpa sed eaque qui mollitia alias voluptates! Aliquam impedit doloremque dolorum, voluptas fugiat dolor iusto, id sint amet praesentium repellendus dignissimos aspernatur fugit illum incidunt sequi ipsa totam animi magnam? Quis nulla distinctio nobis fugiat blanditiis. Iusto eligendi numquam maxime totam accusamus eveniet sunt qui, eos ab unde. In rerum quo odit totam eum eos. Numquam necessitatibus accusantium provident sed, voluptatibus exercitationem eaque repellendus a blanditiis adipisci non deleniti sequi praesentium ut autem omnis, iusto quasi consequatur corporis possimus beatae soluta officia. Doloremque animi, consequuntur natus officiis beatae, quo dolor quod fuga adipisci reprehenderit velit voluptas. Inventore molestias repellat architecto saepe possimus perspiciatis, rerum mollitia. Cumque aliquid rerum ducimus nemo facere. Consequatur impedit earum quam. Explicabo maxime adipisci expedita labore veritatis tempore ab! Eos, explicabo! Quibusdam, similique laborum aperiam omnis dolor facilis fugit magnam magni veniam libero consequatur rem inventore illo ex ipsa dignissimos voluptatibus exercitationem vitae accusantium possimus! Nisi, modi tempora. Ut amet quidem officia ullam impedit, ipsum mollitia doloribus eum recusandae natus optio animi culpa, voluptatem facere numquam laborum architecto perspiciatis alias atque voluptatibus vitae expedita eius reprehenderit sint! Impedit qui repudiandae animi ad unde itaque quibusdam eaque. Maiores nulla necessitatibus quo aperiam asperiores officia quod fuga architecto delectus distinctio, commodi hic nostrum recusandae autem at praesentium itaque suscipit! Earum sit quos inventore doloribus accusantium quis perferendis, ipsa alias accusamus ipsam adipisci illum corrupti blanditiis ducimus tempore qui quibusdam. Fuga quaerat, amet voluptatum in eveniet vel nesciunt consequuntur accusamus omnis? Sint inventore, unde tempore magnam in, eveniet exercitationem ex ea vitae maxime, aliquam dolorem blanditiis accusamus eius laboriosam harum corrupti. Harum praesentium in iusto! Repellendus, aliquam quas totam suscipit consectetur, placeat dolores sequi expedita nostrum corporis modi molestias rerum voluptatum libero atque vel veritatis quae. Nulla iste quis illum? Facilis repellendus laborum aut, odio dolorem perspiciatis asperiores corporis hic officia modi recusandae cupiditate repellat quidem?
-			</div>
+				</div>
+			</section>
+			<section class="page__catalog catalog">
+				<div class="catalog__container">
+					<h2 class="catalog__title">Каталог</h2>
+					<div class="catalog__body body-catalog">
+						<a href="#" class="body-catalog__picture body-catalog__picture_one">
+							<span class="picture-decor-top"></span>
+							<span class="picture-decor-right"></span>
+							<span class="picture-decor-bottom"></span>
+							<span class="picture-decor-left"></span>
+							<div class="body-catalog__image-ibg">
+								<h3 class="body-catalog__title">Шкаф-купе</h3>
+								<picture><source srcset="img/catalog/catalog-image-01.webp" type="image/webp"><img src="img/catalog/catalog-image-01.jpg?_v=1641453869506" alt="catalog-picture"></picture>
+							</div>
+						</a>
+						<a href="#" class="body-catalog__picture body-catalog__picture_two">
+							<span class="picture-decor-top"></span>
+							<span class="picture-decor-right"></span>
+							<span class="picture-decor-bottom"></span>
+							<span class="picture-decor-left"></span>
+							<div class="body-catalog__image-ibg body-catalog__image-ibg_two">
+								<h3 class="body-catalog__title">Шкаф с распашными дверями</h3>
+								<picture><source srcset="img/catalog/catalog-image-02.webp" type="image/webp"><img src="img/catalog/catalog-image-02.jpg?_v=1641453869506" alt="catalog-picture"></picture>
+							</div>
+						</a>
+						<a href="#" class="body-catalog__picture body-catalog__picture_three">
+							<span class="picture-decor-top"></span>
+							<span class="picture-decor-right"></span>
+							<span class="picture-decor-bottom"></span>
+							<span class="picture-decor-left"></span>
+							<div class="body-catalog__image-ibg">
+								<h3 class="body-catalog__title">Кухни</h3>
+								<picture><source srcset="img/catalog/catalog-image-03.webp" type="image/webp"><img src="img/catalog/catalog-image-03.jpg?_v=1641453869506" alt="catalog-picture"></picture>
+							</div>
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="page__materials materials">
+				<div class="materials__container">
+					<div class="materials__title">Современные материалы</div>
+					<div data-tabs class="materials__tabs tabs-materials">
+						<nav data-tabs-titles class="tabs-materials__navigation">
+							<button type="submit" class="tabs-materials__title _tab-active">Материалы</button>
+							<button type="submit" class="tabs-materials__title">Фурнитура</button>
+						</nav>
+						<div data-tabs-body class="tabs-materials__content">
+							<div class="tabs-materials__body">
+								<button class="tabs-materials__arrow-prev"><img src="img/materials/arrows/arrow/chevron_big_left.svg?_v=1641453869506" alt=""></button>
+								<button class="tabs-materials__arrow-next"><img src="img/materials/arrows/arrow/chevron_big_left.svg?_v=1641453869506" alt=""></button>
+								<div class="tabs-materials__slider">
+
+									<div class="tabs-materials__swiper">
+										<a href="#" class="tabs-materials__slide slide-material">
+											<div class="slide-material__image-ibg"><picture><source srcset="img/materials/materials-image-01.webp" type="image/webp"><img src="img/materials/materials-image-01.jpg?_v=1641453869506" alt="материал"></picture></div>
+											<div class="slide-material__name">ЛДСП</div>
+										</a>
+										<a href="#" class="tabs-materials__slide slide-material">
+											<div class="slide-material__image-ibg"><picture><source srcset="img/materials/materials-image-02.webp" type="image/webp"><img src="img/materials/materials-image-02.jpg?_v=1641453869506" alt="материал"></picture></div>
+											<div class="slide-material__name">Стекло</div>
+										</a>
+										<a href="#" class="tabs-materials__slide slide-material">
+											<div class="slide-material__image-ibg"><picture><source srcset="img/materials/materials-image-03.webp" type="image/webp"><img src="img/materials/materials-image-03.jpg?_v=1641453869506" alt="материал"></picture></div>
+											<div class="slide-material__name">МДФ</div>
+										</a>
+										<a href="#" class="tabs-materials__slide slide-material">
+											<div class="slide-material__image-ibg"><picture><source srcset="img/materials/materials-image-04.webp" type="image/webp"><img src="img/materials/materials-image-04.jpg?_v=1641453869506" alt="материал"></picture></div>
+											<div class="slide-material__name">Зеркало</div>
+										</a>
+										<a href="#" class="tabs-materials__slide slide-material">
+											<div class="slide-material__image-ibg"><picture><source srcset="img/materials/materials-image-05.webp" type="image/webp"><img src="img/materials/materials-image-05.jpg?_v=1641453869506" alt="материал"></picture></div>
+											<div class="slide-material__name">Фрезировка</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="tabs-materials__body">
+								<button class="tabs-materials__arrow-prev"><img src="img/materials/arrows/arrow/chevron_big_left.svg?_v=1641453869506" alt=""></button>
+								<button class="tabs-materials__arrow-next"><img src="img/materials/arrows/arrow/chevron_big_left.svg?_v=1641453869506" alt=""></button>
+								<div class="tabs-materials__slider">
+
+									<div class="tabs-materials__swiper">
+										<a href="#" class="tabs-materials__slide slide-material">
+											<div class="slide-material__image-ibg"><picture><source srcset="img/materials/materials-image-06.webp" type="image/webp"><img src="img/materials/materials-image-06.jpg?_v=1641453869506" alt="материал"></picture></div>
+											<div class="slide-material__name">Петли для ДСП</div>
+										</a>
+										<a href="#" class="tabs-materials__slide slide-material">
+											<div class="slide-material__image-ibg"><picture><source srcset="img/materials/materials-image-07.webp" type="image/webp"><img src="img/materials/materials-image-07.jpg?_v=1641453869506" alt="материал"></picture></div>
+											<div class="slide-material__name">Направляющие скрьітого монтажа</div>
+										</a>
+										<a href="#" class="tabs-materials__slide slide-material">
+											<div class="slide-material__image-ibg"><picture><source srcset="img/materials/materials-image-08.webp" type="image/webp"><img src="img/materials/materials-image-08.jpg?_v=1641453869506" alt="материал"></picture></div>
+											<div class="slide-material__name">Мебельньіе ручки</div>
+										</a>
+										<a href="#" class="tabs-materials__slide slide-material">
+											<div class="slide-material__image-ibg"><picture><source srcset="img/materials/materials-image-09.webp" type="image/webp"><img src="img/materials/materials-image-09.jpg?_v=1641453869506" alt="материал"></picture></div>
+											<div class="slide-material__name">Подьемньіе механизмьі</div>
+										</a>
+										<a href="#" class="tabs-materials__slide slide-material">
+											<div class="slide-material__image-ibg"><picture><source srcset="img/materials/materials-image-10.webp" type="image/webp"><img src="img/materials/materials-image-10.jpg?_v=1641453869506" alt="материал"></picture></div>
+											<div class="slide-material__name">Ящики</div>
+										</a>
+										<a href="#" class="tabs-materials__slide slide-material">
+											<div class="slide-material__image-ibg"><picture><source srcset="img/materials/materials-image-11.webp" type="image/webp"><img src="img/materials/materials-image-11.jpg?_v=1641453869506" alt="материал"></picture></div>
+											<div class="slide-material__name">Крючки</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__promotions promotions">
+				<div class="promotions__container">
+					<div class="promotions__body body-promotions">
+						<div class="body-promotions__content">
+							<h2 class="body-promotions__title">Акции</h2>
+							<h3 class="body-promotions__subtitle">Узнай первым об акциях и скидках</h3>
+							<form action="#" class="body-promotions__form">
+								<input class="body-promotions__input" type="text" id="promotion" name="promotionsinput" placeholder="введите номер телефона или email">
+								<button class="body-promotions__button common-button" name="promotionsbutton" type="submit">Подписаться</button>
+							</form>
+						</div>
+						<div class="body-promotions__image"><picture><source srcset="img//promotions/promotions-image-01.webp" type="image/webp"><img src="img//promotions/promotions-image-01.png?_v=1641453869506" alt="phone-picture"></picture></div>
+					</div>
+				</div>
+			</section>
+			<section class="page__reviews reviews">
+				<div class="reviews__container">
+					<div class="reviews__body body-reviews">
+						<button class="reviews__arrow-prev"><img src="img/reviews/arrow-gold_left.svg?_v=1641453869506" alt=""></button>
+						<button class="reviews__arrow-next"><img src="img/reviews/arrow-gold_left.svg?_v=1641453869506" alt=""></button>
+						<h2 class="body-reviews__title">Отзывы</h2>
+						<div class="reviews__slider">
+
+							<div class="reviews__swiper">
+								<div class="reviews__slide slide-review">
+									<div class="slide-review__nick-name">@prlxlr13</div>
+									<div class="slide-review__text">Хочу выразить свою благодарность всему коллективу компании, консультанту, замерщику и монтажникам. Ребята, которые устанавливали кухню, порадовали своей работой, все чисто, аккуратно и быстро. Нареканий по кухне нет, новая кухня – всегда радость для хозяйки!</div>
+								</div>
+								<div class="reviews__slide slide-review">
+									<div class="slide-review__nick-name">@RanCouR</div>
+									<div class="slide-review__text">Нареканий по кухне нет, новая кухня – всегда радость для хозяйки! Ребята, которые устанавливали кухню, порадовали своей работой, все чисто, аккуратно и быстро. </div>
+								</div>
+								<div class="reviews__slide slide-review">
+									<div class="slide-review__nick-name">@WaReZoR</div>
+									<div class="slide-review__text">Хочу выразить свою благодарность всему коллективу компании, консультанту, замерщику и монтажникам. Ребята, которые устанавливали кухню, порадовали своей работой, все чисто, аккуратно и быстро. </div>
+								</div>
+								<div class="reviews__slide slide-review">
+									<div class="slide-review__nick-name">@nilline</div>
+									<div class="slide-review__text">Хочу выразить свою благодарность всему коллективу компании, консультанту, замерщику и монтажникам.Нареканий по кухне нет, новая кухня – всегда радость для хозяйки! Ребята, которые устанавливали кухню, порадовали своей работой, все чисто, аккуратно и быстро. Нареканий по кухне нет, новая кухня – всегда радость для хозяйки!</div>
+								</div>
+							</div>
+							<div class="reviews__pagging"></div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+			<section class="page__production production">
+				<div class="production__container">
+					<h2 class="production__title">Производство</h2>
+				</div>
+				<div class="production__body body-production">
+					<div class="body-production__image-small-ibg"><picture><source srcset="img/production/production-image-01.webp" type="image/webp"><img src="img/production/production-image-01.jpg?_v=1641453869506" alt="production-picture"></picture></div>
+					<div class="body-production__image-big-ibg"><picture><source srcset="img/production/production-image-02.webp" type="image/webp"><img src="img/production/production-image-02.jpg?_v=1641453869506" alt="production-picture"></picture></div>
+					<div class="body-production__content">
+						<div class="content-production">
+							<ul class="content-production__list">
+								<li class="content-production__item"><span><span class="zero-span">0</span>1</span> Минимальный опыт работы наших монтажников — 10 лет</li>
+								<li class="content-production__item"><span><span class="zero-span">0</span>2</span> Любые размеры, цвет, дизайн и фурнитура</li>
+								<li class="content-production__item"><span><span class="zero-span">0</span>3</span> Установка в удобные для Вас день и время</li>
+								<li class="content-production__item"><span><span class="zero-span">0</span>4</span> Сроки изготовления 5-15 дней</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__howwework howwework">
+				<div class="howwework__container">
+					<h2 class="howwework__title">Как мы работаем</h2>
+					<div class="howwework__body body-howwework">
+						<div class="body-howwework__item item-how">
+							<div class="item-how__icon"><img src="img/howwework/how-icon-01.svg?_v=1641453869506" alt="work-icon"></div>
+							<div class="item-how__text">Заказать выезд дизайнера</div>
+						</div>
+						<div class="item-how__arrow item-how__arrow_left"><img src="img/howwework/how-arrow.svg?_v=1641453869506" alt="arrow"></div>
+						<div class="body-howwework__item item-how">
+							<div class="item-how__icon"><img src="img/howwework/how-icon-02.svg?_v=1641453869506" alt="work-icon"></div>
+							<div class="item-how__text">Обмер</div>
+						</div>
+						<div class="item-how__arrow item-how__arrow_down item-how__arrow_down_empty"></div>
+						<div class="item-how__arrow item-how__arrow_down item-how__arrow_down_empty"></div>
+						<div class="item-how__arrow item-how__arrow_down"><img src="img/howwework/how-arrow.svg?_v=1641453869506" alt="arrow"></div>
+						<div class="body-howwework__item item-how">
+							<div class="item-how__icon"><img src="img/howwework/how-icon-03.svg?_v=1641453869506" alt="work-icon"></div>
+							<div class="item-how__text">Оформление договора</div>
+						</div>
+						<div class="item-how__arrow item-how__arrow_right"><img src="img/howwework/how-arrow.svg?_v=1641453869506" alt="arrow"></div>
+						<div class="body-howwework__item item-how">
+							<div class="item-how__icon"><img src="img/howwework/how-icon-04.svg?_v=1641453869506" alt="work-icon"></div>
+							<div class="item-how__text"> Построение проекта</div>
+						</div>
+						<div class="item-how__arrow item-how__arrow_down"><img src="img/howwework/how-arrow.svg?_v=1641453869506" alt="arrow"></div>
+						<div class="item-how__arrow item-how__arrow_down item-how__arrow_down_empty"></div>
+						<div class="item-how__arrow item-how__arrow_down item-how__arrow_down_empty"></div>
+						<div class="body-howwework__item item-how">
+							<div class="item-how__icon"><img src="img/howwework/how-icon-05.svg?_v=1641453869506" alt="work-icon"></div>
+							<div class="item-how__text">Производство</div>
+						</div>
+						<div class="item-how__arrow item-how__arrow_left"><img src="img/howwework/how-arrow.svg?_v=1641453869506" alt="arrow"></div>
+						<div class="body-howwework__item item-how">
+							<div class="item-how__icon"><img src="img/howwework/how-icon-06.svg?_v=1641453869506" alt="work-icon"></div>
+							<div class="item-how__text"> Установка</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+			<section class="page__test-price-two test-price-two">
+				<div class="test-price-two__body">
+					<a href="#" class="test-price-two__image-ibg">
+						<picture><source srcset="img/test-price/test-price-image-two.webp" type="image/webp"><img src="img/test-price/test-price-image-two.jpg?_v=1641453869506" alt="test-price-picture"></picture>
+					</a>
+					<div class="test-price-two__content">
+						<h2 class="test-price-two__title">Узнайте стоимость мебели</h2>
+						<h3 class="test-price-two__subtitle">Ответь на вопросы,получи скидку и бесплатный
+							дизайн проект</h3>
+						<button class="test-price-two__button common-button">Пройти тест</button>
+					</div>
+				</div>
+			</section>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
@@ -114,7 +439,7 @@
 	</div>
 </div>
  -->
-	<script src="js/app.min.js?_v=20211224182720"></script>
+	<script src="js/app.min.js?_v=20220106092429"></script>
 </body>
 
 </html>
